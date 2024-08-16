@@ -1,13 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
 
-class Hero extends JPanel {
+class HeroIgor extends JPanel {
     private int x = 100;
     private int y = 100;
     private final int width = 100;
     private final int height = 100;
 
-    public Hero() {
+    public HeroIgor() {
         setBounds(x, y, width, height);
         setBackground(Color.BLACK);
     }

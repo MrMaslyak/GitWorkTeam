@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 class HeroIlya extends JPanel {
-    private int x = 100;
+    private int x = 250;
     private int y = 100;
     private final int width = 100;
     private final int height = 100;

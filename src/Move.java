@@ -2,13 +2,12 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 class Move implements KeyListener {
-    private final HeroIlya heroIlya;
-    private final Hero hero;
+    private  HeroIlya heroIlya;
+    private  HeroIgor heroIgor;
 
-    public Move(HeroIlya heroIlya) {
+    public Move(HeroIlya heroIlya, HeroIgor heroIgor) {
         this.heroIlya = heroIlya;
-    public Move(Hero hero) {
-        this.hero = hero;
+        this.heroIgor = heroIgor;
     }
 
     @Override
@@ -17,10 +16,10 @@ class Move implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
-            case KeyEvent.VK_RIGHT -> hero.moveRight();
-            case KeyEvent.VK_LEFT -> hero.moveLeft();
-            case KeyEvent.VK_UP -> hero.moveUp();
-            case KeyEvent.VK_DOWN -> hero.moveDown();
+            case KeyEvent.VK_RIGHT -> heroIgor.moveRight();
+            case KeyEvent.VK_LEFT -> heroIgor.moveLeft();
+            case KeyEvent.VK_UP -> heroIgor.moveUp();
+            case KeyEvent.VK_DOWN -> heroIgor.moveDown();
             case KeyEvent.VK_D -> heroIlya.moveRight();
             case KeyEvent.VK_A -> heroIlya.moveLeft();
             case KeyEvent.VK_W -> heroIlya.moveUp();

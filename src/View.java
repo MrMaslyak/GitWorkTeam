@@ -2,14 +2,11 @@ import javax.swing.*;
 
 public class View extends JFrame {
     public View() {
-        Hero hero = new Hero();
-        add(hero);
-        addKeyListener(new Move(hero));
-        setLayout(null);  // Use absolute positioning
-        setSize(800, 600);
+        HeroIgor heroIgor = new HeroIgor();
         HeroIlya heroIlya = new HeroIlya();
+        add(heroIgor);
         add(heroIlya);
-        addKeyListener(new Move(heroIlya));
+        addKeyListener(new Move(heroIlya, heroIgor));
         setLayout(null);
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
