@@ -11,6 +11,7 @@ public class View extends JFrame {
     }
 
     private void ui() {
+
     }
 
 }
