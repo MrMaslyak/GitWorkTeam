@@ -2,6 +2,11 @@ import javax.swing.*;
 
 public class View extends JFrame {
     public View() {
+        Hero hero = new Hero();
+        add(hero);
+        addKeyListener(new Move(hero));
+        setLayout(null);  // Use absolute positioning
+        setSize(800, 600);
         HeroIlya heroIlya = new HeroIlya();
         add(heroIlya);
         addKeyListener(new Move(heroIlya));
